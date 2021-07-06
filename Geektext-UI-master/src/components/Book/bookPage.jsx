@@ -15,7 +15,7 @@ class BookPage extends Component {
             comments: [],
             width: 215,
             height: 280,
-            url: 'http://localhost:5000/add-to-cart',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/add-to-cart',
             loggedIn: Cookies.get('loggedin')
         }
         this.enlarge = this.enlarge.bind(this);
@@ -23,7 +23,7 @@ class BookPage extends Component {
         this.addItemToShoppingCart = this.addItemToShoppingCart.bind(this);
     }
     componentDidMount(){
-        const url = 'http://localhost:5000/book/' + this.state.isbn
+        const url = 'https://guarded-cliffs-60992.herokuapp.com/book/' + this.state.isbn
         fetch(url, {credentials: 'include'})
         .then((res) => res.json())
         .then((json) => {
@@ -75,7 +75,7 @@ class BookPage extends Component {
         if (Cookies.get('loggedin') !== "true") {
             return (
                 <div>
-                    <p><strong>You must <a href="http://geek.localhost.com:3000/login">login</a> or <a href="http://geek.localhost.com:3000/register">register</a> and have the book purchased in order to rate and comment!</strong></p>
+                    <p><strong>You must <a href="https:www.geektext00.web.app/login">login</a> or <a href="https:www.geektext00.web.app/register">register</a> and have the book purchased in order to rate and comment!</strong></p>
                 </div>
             );
         }
@@ -121,12 +121,12 @@ class BookPage extends Component {
                 <h1>{this.state.book.title}</h1>
                 <div className="row align-items-center container-fluid">
                     <div className="col-md-auto align-self-start ml-2 mt-4 mb-3">
-                        <img onClick={() => {this.enlarge()}} src={"http://localhost:5000" + this.state.book.img} alt={this.state.book.img} width={this.state.width} height={this.state.height} className="float-left"/>
+                        <img onClick={() => {this.enlarge()}} src={"https://guarded-cliffs-60992.herokuapp.com" + this.state.book.img} alt={this.state.book.img} width={this.state.width} height={this.state.height} className="float-left"/>
                     </div>
                     <div className="col-md-6 mx-4" style={styles.t}>
                         <div className="container" style={styles.t}>
                             <span style={{fontSize: 20}}>Author: </span>
-                            <a href={"http://geek.localhost.com:3000/author/" + this.state.author_id}>{this.state.book.author}</a>
+                            <a href={"https:www.geektext00.web.app/author/" + this.state.author_id}>{this.state.book.author}</a>
                         </div>
                         <div className="container" style={styles.t}>
                             <span style={{fontSize: 20}}>Price: </span>

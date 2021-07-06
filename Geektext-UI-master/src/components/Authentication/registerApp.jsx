@@ -16,7 +16,7 @@ import Cookies from 'js-cookie';
             email: '',
             password: '',
             address: '',
-            url: 'http://localhost:5000/register',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/register',
             email_error_text: null,
             password_error_text: null,
             error: "",
@@ -98,7 +98,7 @@ import Cookies from 'js-cookie';
             console.log("redirecting")
             Cookies.set('loggedin', 'true');
             Cookies.set('user', this.state.username);
-            window.location = "http://geek.localhost.com:3000/books";
+            window.location = "https://geektext00.web.app/books";
         }
         return (
         <div>

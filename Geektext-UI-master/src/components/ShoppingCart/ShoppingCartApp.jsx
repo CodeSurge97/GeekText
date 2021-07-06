@@ -11,8 +11,8 @@ class ShoppingCartApp extends Component {
         this.state = {
             user: '',
             items: [],
-            url: "http://localhost:5000/get-cart",
-            bookURL: "http://geek.localhost.com:3000/book/" + this.props.isbn,
+            url: "https://guarded-cliffs-60992.herokuapp.com/get-cart",
+            bookURL: "http://geektext00.web.app/book/" + this.props.isbn,
         }
         this.fetch_cart = this.fetch_cart.bind(this);
 
@@ -30,7 +30,7 @@ class ShoppingCartApp extends Component {
         });
     }
     componentDidMount(){
-        const url = 'http://localhost:5000/book/' + this.state.isbn
+        const url = 'https://guarded-cliffs-60992.herokuapp.com/book/' + this.state.isbn
         this.fetch_cart();
     }
     render() {

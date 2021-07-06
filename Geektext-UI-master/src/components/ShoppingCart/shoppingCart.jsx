@@ -6,7 +6,7 @@ class ShoppingCart extends Component {
         this.state = {
             username: '',
             items: [],
-            url: 'http://localhost:5000/get-cart/1',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/get-cart/1',
         }
     }
     componentDidMount(){

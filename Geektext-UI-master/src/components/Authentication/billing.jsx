@@ -14,7 +14,7 @@ import Cookies from 'js-cookie';
             cvv: '',
             exp_date: '',
             username: Cookies.get('user'),
-            url: 'http://localhost:5000/billing',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/billing',
             error: "",
             validated: "false",
         };
@@ -78,7 +78,7 @@ import Cookies from 'js-cookie';
     render() {
      if(this.state.validated !== "false"){
             console.log("redirecting")
-            window.location = "http://geek.localhost.com:3000/books";
+            window.location = "https://geektext00.web.app/books";
             }
         return (
         <div>

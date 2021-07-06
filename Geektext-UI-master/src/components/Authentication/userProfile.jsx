@@ -13,7 +13,7 @@ class UserProfile extends Component {
     }
     
     componentDidMount(){
-        const url = 'http://localhost:5000/user/' + this.state.username
+        const url = 'https://guarded-cliffs-60992.herokuapp.com/user/' + this.state.username
         fetch(url, {credentials: 'include'})
         .then(res => res.json())
         .then(json => {

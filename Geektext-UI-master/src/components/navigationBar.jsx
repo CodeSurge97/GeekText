@@ -104,7 +104,7 @@ class NavigationBar extends Component {
                         <a className="nav-link">Team 4</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="http://geek.localhost.com:3000/shopping-cart">Shopping Cart</a>
+                        <a className="nav-link" href="http://geektext00.web.app/shopping-cart">Shopping Cart</a>
                     </li>
 
                 </ul>

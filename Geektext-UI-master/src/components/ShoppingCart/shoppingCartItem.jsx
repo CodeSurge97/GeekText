@@ -9,7 +9,7 @@ class ShoppingCartItem extends Component {
             count: this.props.count,
             title: this.props.title,
             img: this.props.img,
-            url: 'http://localhost:5000/remove-from-cart',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/remove-from-cart',
             isbn: this.props.isbn
             //You obviously need to specify an isbn here to be able to use this.state.isbn
         }
@@ -56,7 +56,7 @@ class ShoppingCartItem extends Component {
                 <Grid>
                     <Row>
                         <Col>
-                            <Image height={150} width={100} href="#" src={"http://localhost:5000/static/" + this.state.img}
+                            <Image height={150} width={100} href="#" src={"https://guarded-cliffs-60992.herokuapp.com/static/" + this.state.img}
                                 alt={"171x180"}/>
                         </Col>
                         <Col>

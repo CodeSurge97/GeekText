@@ -7,7 +7,7 @@ class Logout extends Component {
     constructor(props){
         super(props);
         this.state = {
-           url: "http://localhost:5000/logout",
+           url: "https://guarded-cliffs-60992.herokuapp.com/logout",
            error: "",
            loggedin: "true",
         }
@@ -15,7 +15,7 @@ class Logout extends Component {
     }
 
     componentDidMount(){
-        const url = 'http://localhost:5000/logout/'
+        const url = 'https://guarded-cliffs-60992.herokuapp.com/logout/'
         fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -29,7 +29,7 @@ class Logout extends Component {
     render() {
         if(Cookies.get('loggedin') !== "false"){
             console.log("redirecting")
-            window.location = "http://geek.localhost.com:3000/books";
+            window.location = "http://geektext00.web.app/books";
             Cookies.set('loggedin', 'false')
         }
          return (null);

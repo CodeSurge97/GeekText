@@ -13,7 +13,7 @@ class AuthorPage extends Component {
     }
 
     componentDidMount(){
-        const url = 'http://localhost:5000/author/' + this.state.author_id;
+        const url = 'https://guarded-cliffs-60992.herokuapp.com/author/' + this.state.author_id;
         fetch(url, {credentials: 'include'})
         .then(res => res.json())
         .then(json => {
@@ -35,7 +35,7 @@ class AuthorPage extends Component {
                 <div className="jumbotron" style={{backgroundColor: 'white', padding: '10px',}}>
                     <div className="mx-5 float-left">
                     {(this.state.img != "") ?
-                        <img src={"http://localhost:5000/static/" + this.state.img} alt={this.state.img} width="200px" height="225px" className="float-left img-thumbnail"/>
+                        <img src={"https://guarded-cliffs-60992.herokuapp.com/static/" + this.state.img} alt={this.state.img} width="200px" height="225px" className="float-left img-thumbnail"/>
                         :
                         <div/>}
                     </div>

@@ -9,7 +9,7 @@ class AddComment extends Component {
         this.state = {
             text: '',
             id: '',
-            url: 'http://localhost:5000/comment',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/comment',
             isbn: this.props.isbn,
             rating: 3,
             charsRemaining: 1500,
@@ -54,7 +54,7 @@ class AddComment extends Component {
           })
         })
         console.log("Contents: " + this.state.text)
-        window.setTimeout(()=> (window.location = "http://geek.localhost.com:3000/book/" + this.state.isbn), 1500);
+        window.setTimeout(()=> (window.location = "http://geektext00.web.app/book/" + this.state.isbn), 1500);
     }
     updateCharacters(length) {
         this.setState({

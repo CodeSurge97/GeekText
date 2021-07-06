@@ -26,7 +26,7 @@ def create_response_json(request, json=""):
         response.headers['Access-Control-Allow-Origin'] = request.headers['Origin']
     except:
         print("we have an error with heading 'Access-Control-Allow-Origin'")
-        response.headers['Access-Control-Allow-Origin'] = 'http://geek.localhost.com:3000'
+        response.headers['Access-Control-Allow-Origin'] = 'https://geektext00.web.app'
     response.headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
     return response
 
@@ -601,7 +601,7 @@ def billing():
         if(resp['validated'] == "true"):
             print("setting the cookie")
             response.set_cookie("validated", "true")
-        response.headers['Access-Control-Allow-Origin'] = 'http://geek.localhost.com:3000'
+        # response.headers['Access-Control-Allow-Origin'] = 'https://geektext00.web.app'
         print(response.headers)
     elif request.method == 'OPTIONS':
         response = create_response_options(request=request)

@@ -13,7 +13,7 @@ import Cookies from 'js-cookie';
             email: '',
             password: '',
             address: '',
-            url: 'http://localhost:5000/Edit_Profile',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/Edit_Profile',
             error: "",
             updated: "false",
         }
@@ -92,7 +92,7 @@ import Cookies from 'js-cookie';
      if(this.state.updated !== "false"){
             console.log("redirecting")
             Cookies.set('user', this.state.new_username)
-            window.location = "http://geek.localhost.com:3000/user/" + this.state.new_username;
+            window.location = "http://geektext00.web.app/user/" + this.state.new_username;
         }
         return (
         <div>

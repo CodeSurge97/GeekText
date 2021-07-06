@@ -16,12 +16,12 @@ class Book extends Component {
             isbn: this.props.isbn,
             description: this.props.description,
             rating: this.props.rating,
-            url: 'http://localhost:5000/add-to-cart',
+            url: 'https://guarded-cliffs-60992.herokuapp.com/add-to-cart',
             margin: "20px",
             fontSize: "14px",
             width: "130px",
             height: "180px",
-            bookURL: "http://geek.localhost.com:3000/book/" + this.props.isbn,
+            bookURL: 'https://geektext00.web.app/book/' + this.props.isbn,
             BgColor: "#f4f4f4",
         }
         this.addItemToShoppingCart = this.addItemToShoppingCart.bind(this);
@@ -88,7 +88,7 @@ class Book extends Component {
                         <div className="d-flex flex-row">
                             <div className="d-flex col-md-auto">
                                 <div>
-                                    <img src={"http://localhost:5000" + this.state.img} alt={this.state.img} style={styles.i} width={this.state.width} height={this.state.height} className="img-thumbnail float-left"/>
+                                    <img src={"https://guarded-cliffs-60992.herokuapp.com" + this.state.img} alt={this.state.img} style={styles.i} width={this.state.width} height={this.state.height} className="img-thumbnail float-left"/>
                                 </div>
                             </div>
                             <div className="d-flex flex-column">

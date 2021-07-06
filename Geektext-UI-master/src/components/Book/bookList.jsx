@@ -23,7 +23,7 @@ class BookList extends Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:5000/books/' + this.state.activePage + '/' + this.state.itemsPerPage,
+        fetch('https://guarded-cliffs-60992.herokuapp.com/books/' + this.state.activePage + '/' + this.state.itemsPerPage,
         {credentials: 'include'})
         .then(res => res.json())
         .then(json => {
@@ -100,24 +100,24 @@ class BookList extends Component {
         });
 
 
-        // let url = 'http://localhost:5000/books/' + pageNumber + '/' + this.state.itemsPerPage;
+        // let url = 'https://guarded-cliffs-60992.herokuapp.com/books/' + pageNumber + '/' + this.state.itemsPerPage;
         // if(this.props.searchTitle == ""){
         //     console.log("the search title is ''");
         //     this.setState({sortBy: sortBy})
         //     if(sortBy === 'priceD'){
-        //         url = 'http://localhost:5000/book/by-price-d/'  + pageNumber + '/' + this.state.itemsPerPage;
+        //         url = 'https://guarded-cliffs-60992.herokuapp.com/book/by-price-d/'  + pageNumber + '/' + this.state.itemsPerPage;
         //     }else if(sortBy === 'priceA'){
-        //         url = 'http://localhost:5000/book/by-price-a/'  + pageNumber + '/' + this.state.itemsPerPage;
+        //         url = 'https://guarded-cliffs-60992.herokuapp.com/book/by-price-a/'  + pageNumber + '/' + this.state.itemsPerPage;
         //     }else if(sortBy === 'ratingD'){
-        //         url = 'http://localhost:5000/book/by-rating-d/'  + pageNumber + '/' + this.state.itemsPerPage;
+        //         url = 'https://guarded-cliffs-60992.herokuapp.com/book/by-rating-d/'  + pageNumber + '/' + this.state.itemsPerPage;
         //     }else if(sortBy === 'ratingA'){
-        //         url = 'http://localhost:5000/book/by-rating-a/'  + pageNumber + '/' + this.state.itemsPerPage;
+        //         url = 'https://guarded-cliffs-60992.herokuapp.com/book/by-rating-a/'  + pageNumber + '/' + this.state.itemsPerPage;
         //     }else if(sortBy === 'author'){
-        //         url = 'http://localhost:5000/book/by-author/'  + pageNumber + '/' + this.state.itemsPerPage;
+        //         url = 'https://guarded-cliffs-60992.herokuapp.com/book/by-author/'  + pageNumber + '/' + this.state.itemsPerPage;
         //     }
         // }else{
         //     console.log("this is from bookList and the book we are searching for is " + this.props.searchTitle)
-        //     url = 'http://localhost:5000/book/' + this.props.searchTitle;
+        //     url = 'https://guarded-cliffs-60992.herokuapp.com/book/' + this.props.searchTitle;
         // }
 
         // if browseBy === genre or topSeller or topRated. Filter.
